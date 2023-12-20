@@ -6,15 +6,15 @@ var u_name, email, message;
 var ready = function () {
     u_name = document.getElementById("cart").value;
     adress = document.getElementById("ADRESS").value;
-    message = document.getElementById("message").value;
-    message = "cart: " + u_name + "\nADRESS: " + adress + "\nMessage: " + message;
+   
+    message = "cart: " + u_name + "\nADRESS: " + adress + "\nMessage: " ;
 };
 var sender = function () {
     ready();
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://api.telegram.org/bot" + telegram_bot_id + "/sendMessage",
+        "url": "https://api.telegram.org/bot" + 6834718836:AAFSF4bC8q9aUwXMS1hvnKaP4z230JnN8n8 + "/sendMessage",
         "method": "POST",
         "headers": {
             "Content-Type": "application/json",
@@ -28,8 +28,8 @@ var sender = function () {
     $.ajax(settings).done(function (response) {
         console.log(response);
     });
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
+    document.getElementById("cart").value = "";
+    document.getElementById("ADRESS").value = "";
+   
     return false;
 };
