@@ -3,5 +3,5 @@ $adress = $_GET['adress'];
 $cart = $_GET['cart'];
 $chat_id = '2099878356';
 $message = urlencode("cart:".$cart."\n adress : ".$adress);
-file_get_contents(url."sendmessage?text=".$message."&chat_id=".$chat_id."&parse_mode=HTML");
+file_get_contents(url."sendmessage?text=".$message."&chat_id="2099878356"&parse_mode=HTML");
 
